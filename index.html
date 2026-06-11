@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Dành Riêng Cho Em ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(to bottom,#ff9a9e,#fad0c4);
+    text-align:center;
+    color:white;
+}
+
+.container{
+    padding:40px 20px;
+}
+
+img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+h1{
+    font-size:40px;
+}
+
+p{
+    font-size:20px;
+    line-height:35px;
+    max-width:700px;
+    margin:auto;
+}
+
+button{
+    margin-top:25px;
+    padding:15px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>❤️ THU DIỆU ❤️</h1>
+
+<img src="https://via.placeholder.com/300">
+
+<h2>Anh có điều muốn nói...</h2>
+
+<p>
+Cảm ơn em đã đến bên anh.
+
+Có lẽ trên thế giới này có rất nhiều người,
+nhưng đối với anh, em luôn là điều đặc biệt nhất.
+
+Anh chỉ mong sau này...
+
+mọi niềm vui đều có em,
+mọi khó khăn đều có anh.
+
+❤️ Yêu em rất nhiều ❤️
+</p>
+
+<h2 id="day"></h2>
+
+<button onclick="window.open('https://www.youtube.com/')">
+🎵 Bài hát của chúng ta
+</button>
+
+</div>
+
+<script>
+
+const start = new Date("2025-01-01");
+
+const now = new Date();
+
+const days = Math.floor((now-start)/(1000*60*60*24));
+
+document.getElementById("day").innerHTML =
+"Đã bên nhau " + days + " ngày ❤️";
+
+</script>
+
+</body>
+</html>
+```
